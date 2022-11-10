@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+
+    <title>Plomero Gasista Bahia Blanca</title>
+</head>
+
+<body>
+
+    <!--Barra de Navegacion-->
+    <nav class="navbar navbar-expand-lg navBara fixed-top ">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logo.png" alt="Bootstrap" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto flex-column align-items-center m-0 flex-lg-row">
+                    <li class="nav-item m-1 ">
+                        <a href="../index.html" class="nav-link menuLink" >Inicio</a>
+
+                    </li>
+                    <li class="nav-item m-1 ">
+                        <a  href="servicios.html" class="nav-link menuLink">Servicios</a>
+                    </li>
+                    <li class="nav-item m-1">
+                        <a href="trabajos.html" class="nav-link menuLink">Trabajos</a>
+
+                    </li>
+                    <li class="nav-item m-1">
+                    <a href="nosotros.html" class="nav-link menuLink">Nosotros</a>
+                    </li>
+                    <li class="nav-item m-1">
+                    <a  href="contacto.html" class="nav-link menuLink active">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Contenido de la Pagina-->
+    <main>
+
+        <!--Unica Seccion-->
+        <section class="espaciadoContacto">
+
+            <!--Primer articulo, futuro articulo con datos personales e iconos-->
+            <article>
+                <h1></h1>
+                <div>
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+            </article>
+            
+            <!--Segundo articulo-->
+            <article class="contentFormulario">
+                <h2>Envianos tu consulta</h2>
+                <form action="">
+                    <div class="datos">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+                    <div class="datos">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido">
+                    </div>
+                    <div class="datos">
+                        <label for="telefono">Telefono:</label>
+                        <input type="text" name="telefono" id="telefono">
+                    </div>
+                    <div class="datos">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <label for="consulta">Mensaje:</label>
+                    <div class="datos">
+
+                        <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="noeres" name="noeres" value="no eres">
+                        <label for="noeres" class="robot">No soy robot</label>
+                    </div>
+                    <div class="datos">
+                        <button class="btn" type="submit">Enviar Datos</button>
+                    </div>
+                </form>
+            </article>
+
+        </section>
+    </main>
+    
+    <!--Pie de pagina-->
+    <footer>
+        <div class="contentFooter">
+            <div class="contentParrafosFooter">
+                <p class="parrafoFooter"> <span class="spanFooter">Lorem ipsum dolor sit amet </span> Iusto natus molestiae et eveniet odit iste cum libero?
+                </p>
+                <p class="parrafoFooter"> <span class="spanFooter"> Lorem, ipsum dolor sit amet  </span> Excepturi, molestias molestiae.Lorem ipsum dolor sit amet </p>
+                <p class="parrafoFooter"> <span class="spanFooter"> Lorem ipsum dolor sit amet.</span> Repellat nostrum distinctio corruptiplaceat vel iusto.
+                </p>
+                <p class="parrafoFooter"> <span class="spanFooter"> Lorem ipsum dolor sit amet</span> Repellat nostrum distinctio corruptiplaceat vel iusto </p>
+            </div>
+            <picture class="contentIconoFooter">
+                <img src="../assets/images/iconoFooter.png" alt="Icono de un plomero" class="iconoFooter">
+            </picture>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,1982 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+body {
+    text-align: center;
+    color: white;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23e6f2f7' fill-opacity='1'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
+    font-family: 'Lato', sans-serif;
+
+}
+
+/*Barra de Navegacion*/
+
+
+.navBara {
+
+    background: rgb(13, 61, 94);
+    background: linear-gradient(180deg, rgba(13, 61, 94, 1) 15%, rgba(16, 112, 173, 1) 45%, rgba(54, 165, 235, 1) 80%, rgba(97, 194, 255, 1) 95%);
+
+    border-bottom: 3px solid #ffc500;
+    z-index: 999;
+}
+
+.navbar-toggler {
+    background-color: #ffc500;
+    padding: 8px 10px;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(0.8);
+}
+
+
+.menuLink {
+    padding: .5em .8em;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.menuLink::before,
+.menuLink::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.menuLink::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #ffc500;
+    border-right: 3px solid #ffc500;
+    transform: translate(-100%, 50%);
+}
+
+.menuLink:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #ffc500;
+    border-left: 3px solid #ffc500;
+    transform: translate(100%, -50%)
+}
+
+.menuLink:hover:before,
+.menuLink:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.menuLink:hover {
+    color: #ffc500;
+}
+
+.navbar-nav .nav-link.active {
+    color: #FF8000;
+}
+
+/*Primera Seccion*/
+
+.primeraSeccion {
+    display: flex;
+    height: 105vh;
+    background: linear-gradient(rgba(103, 164, 211, 0.205), rgba(103, 164, 211, 0.199)), url('../images/fondoPrincipal.jpeg') no-repeat top center/cover;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+
+.tituloPrincipal {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 0 0 1.25rem 0;
+    font-weight: bolder;
+    margin-left: 30px;
+}
+
+.animate__lightSpeedInRight {
+    --animate-duration: 2s;
+    --animate-delay: 2s;
+}
+
+.textoPrincipal {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 30px;
+    text-align: left;
+}
+
+/*Segunda Seccion*/
+
+
+
+.segundaSeccion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 11rem;
+    border-bottom: 3px solid #ffc500;
+    background: rgb(16, 112, 173);
+    background: linear-gradient(125deg, rgba(16, 112, 173, 1) 20%, rgba(57, 157, 219, 1) 77%, rgba(130, 207, 255, 1) 95%);
+}
+
+.textoSegundaSeccion {
+    width: 80%;
+}
+
+.tituloSecundario {
+    text-align: left;
+    font-size: 2.1rem;
+    margin: 0 0 10px 0;
+    color: #FFA400;
+    font-weight: bold;
+}
+
+.parrafoSecundario {
+    text-align: justify;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 300;
+}
+
+
+.iconoSecundario {
+    animation: saltar;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+
+@keyframes saltar {
+    from {
+        margin-top: 20%;
+    }
+
+    to {
+        margin-bottom: 20%;
+    }
+}
+
+
+/*Tercera Seccion*/
+
+.terceraSeccion {
+    display: flex;
+    height: auto;
+    background-color: #E6F2F7;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #ffffff 0, #ffffff 1px, #E6F2F7 0, #E6F2F7 50%);
+    background-size: 20px 20px;
+}
+
+.segundoArticulo {
+    width: 100%;
+    margin: 5% 8%;
+    background-color: #1070AD;
+    border-radius: 10px;
+    border: 2px solid #ffc500;
+    box-shadow: 0px 0px 8px #ffc500,
+        0px 0px 8px #ffc500;
+    transition: 0.7s ease;
+}
+
+.segundoArticulo:hover {
+    box-shadow: 0px 0px 8px 4px #ffc500,
+        0px 0px 8px 4px #ffc500;
+}
+
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ffc500;
+}
+
+.tituloEncabezado {
+    margin: 10px;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    display: inline-block;
+    position: relative;
+}
+
+.tituloEncabezado::after,
+.tituloEncabezado::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    background-color: #FFA400;
+    top: 0.6em;
+}
+
+.tituloEncabezado::before {
+
+    left: -44%;
+}
+
+.tituloEncabezado::after {
+    right: -44%;
+}
+
+.parrafoEncabezado {
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: 300;
+
+}
+
+.serviciosIndex {
+    display: flex;
+    border: 1px solid #ffc500;
+}
+
+
+.contentTextoServicioIndex {
+    width: 50%;
+    height: auto;
+    background: rgb(16, 112, 173);
+    background: linear-gradient(155deg, rgba(16, 112, 173, 1) 25%, rgba(50, 155, 219, 1) 50%, rgba(84, 190, 255, 1) 85%, rgba(184, 228, 255, 1) 100%);
+}
+
+.textoServicioIndex {
+    margin: 15% 10%;
+    text-align: justify;
+}
+
+.titulosServicioIndex {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.titulosServicioIndex::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(111deg, rgba(255, 164, 0, 1) 30%, rgba(255, 197, 0, 1) 55%, rgba(245, 218, 140, 1) 85%);
+    height: 10%;
+    bottom: -0.5rem;
+    transform: skew(45deg);
+}
+
+
+
+.parrafosServicioIndex {
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 5%;
+}
+
+.contentImagenServicioIndex {
+    width: 50%;
+    height: auto;
+
+}
+
+
+.imagenServicioIndex {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*Cuarta Seccion*/
+
+.cuartaSeccion {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 14rem;
+    border-top: 3px solid #77B4E0;
+    border-bottom: 3px solid #77B4E0;
+    background-image: url('../images/fondoAzulejo.jpg');
+    background-size: cover;
+}
+
+
+.textoCuartaSeccion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tituloCuartaSeccion {
+    color: #008bf8;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.parrafoCuartaSeccion {
+    font-size: 1.4rem;
+    text-align: justify;
+    color: black;
+}
+
+.cuartaSeccion a {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.cuartaSeccion .learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+.cuartaSeccion .learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #ffc500;
+    border-radius: 1.625rem;
+}
+
+.cuartaSeccion .learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+.cuartaSeccion .learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+.cuartaSeccion .learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+.cuartaSeccion .learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #FFA400;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cuartaSeccion a:hover .circle {
+    width: 100%;
+}
+
+.cuartaSeccion a:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+.cuartaSeccion a:hover .button-text {
+    color: #fff;
+}
+
+/*Quinta Seccion*/
+
+
+
+.quintaSeccion {
+    display: flex;
+    height: auto;
+    align-items: center;
+    background-color: #e6f2f7;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+.iconosQuintaSeccion {
+    margin-top: 4%;
+    height: auto;
+    width: 100%;
+    align-items: center;
+}
+
+.contentQuintaSeccion {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 28rem;
+    border: top;
+    width: auto;
+    border-top: 4px solid #ffc500;
+    border-bottom: 4px solid #ffc500;
+}
+
+.contentQuintaSeccion img {
+    width: 100%;
+    transition: all 500ms ease-out;
+}
+
+.fondo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlayQuintaSeccion {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffc40071;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    transform: scale(0);
+    transition: transform .4s;
+}
+
+
+.contentQuintaSeccion:hover>.overlayQuintaSeccion {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) rotate(360deg);
+}
+
+.overlayQuintaSeccion img {
+    width: 10%;
+    opacity: 0.3;
+    margin-top: 30px;
+}
+
+.overlayQuintaSeccion h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
+/*Sexta Seccion*/
+
+.sextaSeccion {
+    display: flex;
+    background-color: #e6f2f7;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+
+
+.contentSextaSeccion {
+    margin: 4% 0;
+    display: flex;
+    background: rgb(81, 166, 219);
+    background: radial-gradient(circle, rgba(81, 166, 219, 1) 19%, rgba(57, 157, 219, 1) 46%, rgba(16, 112, 173, 1) 88%);
+    height: auto;
+    justify-content: space-between;
+    border: 2px solid #77B4E0;
+    box-shadow: 8px 8px 10px #77B4E0,
+        -8px -8px 10px #77B4E0;
+    transition: 0.7s ease;
+}
+
+.contentSextaSeccion:hover {
+    box-shadow: 8px 8px 10px 3px #77B4E0,
+        -8px -8px 10px 3px #77B4E0;
+}
+
+
+.planosSextaSeccion {
+    height: auto;
+    width: 30%;
+}
+
+.planos {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.textoSextaSeccion {
+    width: 50%;
+    height: auto;
+    padding: 2% 2%;
+    text-align: justify;
+}
+
+.tituloSextaSeccion {
+    font-size: 1.8rem;
+    margin: 0 0 10px 0;
+}
+
+.parrafoSextaSeccion {
+    font-size: 1.4rem;
+    color: black;
+}
+
+/*Pie de Pagina*/
+
+.contentFooter {
+    display: flex;
+
+    background: rgb(13, 61, 94);
+    background: linear-gradient(0deg, rgba(13, 61, 94, 1) 15%, rgba(16, 112, 173, 1) 55%, rgba(54, 165, 235, 1) 85%, rgba(97, 194, 255, 1) 95%);
+    border-top: 3px solid #ffc500;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.iconoFooter {
+    width: 50%;
+    padding: 2% 2%;
+}
+
+.contentParrafosFooter {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+}
+
+.parrafoFooter {
+    margin: 0px;
+}
+
+.spanFooter {
+    color: #FFA400;
+}
+
+
+/*Pagina Servicios*/
+
+
+.espaciadoServicios {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.servicios {
+    background: rgb(16, 112, 173);
+    background: linear-gradient(145deg, rgba(16, 112, 173, 1) 20%, rgba(46, 153, 219, 1) 56%, rgba(57, 157, 219, 1) 86%, rgba(92, 192, 255, 1) 100%);
+    border: 4px solid #ffc500;
+    border-radius: 10px;
+    display: grid;
+    height: auto;
+    gap: 1%;
+    justify-items: center;
+    margin: 10% 3% 5% 3%;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas:
+        "textoPrincipal  textoPrincipal textoPrincipal"
+        "servicio1 servicio2 servicio3"
+        "servicio4 servicio5 servicio6"
+        "servicio7 servicio8 servicio9"
+        "espacio espacio espacio"
+    ;
+    box-shadow: 0px 0px 5px #ffc500,
+        0px 0px 5px #ffc500;
+}
+
+
+
+.servicio {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ffc500;
+    background: linear-gradient(151deg, rgba(16, 112, 173, 1) 20%, rgba(46, 153, 219, 1) 75%, rgba(92, 192, 255, 1) 96%);
+    border-radius: 5px;
+    transition: box-shadow 0.7s ease;
+
+}
+
+
+.servicio:hover {
+    color: #FFA400;
+    box-shadow: 10px 10px 15px #FFA400,
+        -10px -10px 15px #FFA400;
+
+}
+
+
+.imagenServicio {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.cajaServicios {
+    grid-area: espacio;
+    height: 6.2rem;
+}
+
+.textoPrincipalServicio {
+    grid-area: textoPrincipal;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicio1 {
+    grid-area: servicio1;
+}
+
+.servicio2 {
+    grid-area: servicio2;
+}
+
+.servicio3 {
+    grid-area: servicio3;
+}
+
+.servicio4 {
+    grid-area: servicio4;
+}
+
+.servicio5 {
+    grid-area: servicio5;
+}
+
+.servicio6 {
+    grid-area: servicio6;
+}
+
+.servicio7 {
+    grid-area: servicio7;
+}
+
+.servicio8 {
+    grid-area: servicio8;
+}
+
+.servicio9 {
+    grid-area: servicio9;
+}
+
+
+.tituloPrincipalServicios {
+    text-align: center;
+    margin: 8px 0;
+    font-size: 5rem;
+    padding: 10px 10px;
+    font-weight: bolder;
+}
+
+.parrafoPrincipalServicios {
+    color: black;
+    font-size: 2.4rem;
+    text-align: justify;
+    font-weight: lighter;
+    margin: 0 15px;
+}
+
+
+.titulosServicio {
+    text-align: center;
+    margin: 10px;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.parrafosServicio {
+    color: black;
+    text-align: justify;
+    font-size: 1.4rem;
+    margin: 10px;
+    font-weight: 500;
+}
+
+
+
+
+
+/*Pagina Nosotros*/
+
+.espaciadoNosotros {
+    height: auto;
+    display: flex;
+
+}
+
+.contentNosotros {
+    display: flex;
+    width: 100%;
+    margin: 20% 0;
+    background-color: #1070AD;
+    border-bottom: 4px solid #ffc500;
+    border-top: 4px solid #ffc500;
+}
+
+.textoNosotros {
+    width: 90%;
+}
+
+.contentIconoNosotros {
+    width: 10%;
+}
+
+.iconoNosotros {
+    margin: 60% 5% 0 0;
+}
+
+.contentNosotros h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+.contentNosotros span {
+    color: #FFA400;
+}
+
+.contentNosotros p {
+    margin: 10px;
+    font-size: 20px;
+    padding: 20px;
+    text-align: justify;
+    color: black;
+}
+
+/*Pagina Trabajos*/
+
+.espaciadoTrabajos {
+    height: auto;
+    display: flex;
+}
+
+.trabajos {
+    margin: 10% 10% 5% 10%;
+    height: auto;
+    background-color: #1070AD;
+    border: 4px solid #ffc500;
+    border-radius: 10px;
+}
+
+.textoTrabajos {
+    height: 18%;
+}
+
+.tituloTrabajos {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 35px;
+    padding: 10px 10px;
+}
+
+.parrafoTrabajos {
+    color: black;
+    font-size: 22px;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.contentTrabajos {
+    height: 80%;
+}
+
+.contentImagenTrabajos {
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    object-fit: contain;
+}
+
+
+.tablaTrabajos {
+    margin: 20px 0 0 50px;
+    width: 90%;
+    background-color: #F5CF54;
+}
+
+.tablaTrabajos th,
+td {
+    border: 2px solid #FFA400;
+    text-align: center;
+}
+
+.tablaTrabajos thead {
+    color: white;
+    background-color: #ffc500;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+td:hover {
+    background-color: #ffa600af;
+}
+
+/*Pagina Contacto*/
+
+.espaciadoContacto {
+    height: 1000px;
+    display: flex;
+
+
+}
+
+.contentFormulario {
+
+    margin: auto;
+    width: 450px;
+    background-color: #F5DA8C;
+    border: 4px solid #ffc500;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 15px;
+    font-weight: bolder;
+    color: #FFA400;
+}
+
+form {
+    padding: 15px;
+}
+
+form label {
+    width: 80px;
+    font-size: 20px;
+    padding: 10px 0;
+    color: black;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+input {
+    background-color: white;
+    max-width: 180px;
+    height: 35px;
+    padding: 10px;
+    border: 2px solid #FFA400;
+    border-radius: 5px;
+}
+
+input:focus {
+    color: black;
+    background-color: white;
+    outline-color: #ffc500;
+    box-shadow: -3px -3px 15px#FFA400;
+    transition: .1s;
+    transition-property: box-shadow;
+}
+
+textarea {
+    background-color: white;
+    height: 8em;
+    width: 300px;
+    padding: 10px;
+    resize: none;
+
+    border: 2px solid #FFA400;
+    border-radius: 5px;
+}
+
+.datos {
+    margin: 10px 0;
+}
+
+.robot {
+    font-size: 15px;
+    width: auto;
+    margin: 10px 0;
+}
+
+input[type="checkbox"] {
+    height: auto;
+}
+
+.btn {
+    padding: 0.9em 1.6em;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+}
+
+.btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffc500;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+/* glow */
+.btn::before {
+    content: "";
+    background: linear-gradient(45deg,
+            #FFA400, #77B4E0,
+            #FFA400, #77B4E0);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* hover */
+.btn:hover::before {
+    opacity: 1;
+}
+
+.btn:active:after {
+    background: transparent;
+}
+
+.btn:active {
+    color: #ff8000;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 0) and (max-width: 455px) {
+
+    /*primeraSeccion*/
+    .tituloPrincipal {
+        font-size: 2.5rem;
+    }
+
+    .textoPrincipal {
+        font-size: 1.5rem;
+
+    }
+
+    /*segundaSeccion*/
+
+
+    .tituloSecundario {
+        font-size: 1.1rem;
+    }
+
+    .parrafoSecundario {
+        font-size: 0.9rem;
+    }
+
+    .iconoSecundario {
+        width: 80%;
+    }
+
+    /*terceraSeccion*/
+
+    .segundoArticulo {
+        margin: 4% 4% 7% 4%;
+    }
+
+    .tituloEncabezado {
+        font-size: 2.2rem;
+    }
+
+    .parrafoEncabezado {
+        font-size: 1rem;
+    }
+
+    .serviciosIndex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contentTextoServicioIndex {
+        width: 100%;
+
+    }
+
+    .contentImagenServicioIndex {
+        width: 100%;
+    }
+
+
+    .textoServicioIndex {
+        margin: 4% 4%;
+    }
+
+    .titulosServicioIndex {
+        font-size: 1.5rem;
+    }
+
+    .parrafosServicioIndex {
+        font-size: 1rem;
+    }
+
+    .ordenartexto {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+    }
+
+    .ordenarimagen {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+
+    /*cuartaSeccion*/
+
+
+    .cuartaSeccion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .textoCuartaSeccion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tituloCuartaSeccion {
+        font-size: 1.3rem;
+    }
+
+    .parrafoCuartaSeccion {
+        font-size: 1rem;
+    }
+
+    .cuartaSeccion button.learn-more {
+        width: 8.6rem;
+        height: auto;
+    }
+
+    /*quintaSeccion*/
+
+    .iconosQuintaSeccion {
+        margin-top: 7%;
+    }
+
+    .overlayQuintaSeccion h2 {
+        font-size: 1.4rem;
+    }
+
+    .overlayQuintaSeccion img {
+        width: 20%;
+        opacity: 0.3;
+    }
+
+    /*sextaSeccion*/
+
+    .contentSextaSeccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 8% 8%;
+    }
+
+    .planosSextaSeccion {
+        width: auto;
+    }
+
+    .planos {
+        width: 100%;
+    }
+
+    .tituloSextaSeccion {
+        font-size: 1.4rem;
+    }
+
+    .parrafoSextaSeccion {
+        font-size: 1.1rem;
+    }
+
+    /*footer*/
+
+    .contentFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iconoFooter {
+        width: 35%;
+    }
+
+
+    .parrafoFooter {
+        font-size: 0.9rem;
+    }
+
+    /*Pagina Servicios*/
+
+    .espaciadoServicios {
+        margin-top: 6rem;
+    }
+
+    .tituloPrincipalServicios {
+        font-size: 3rem;
+    }
+
+    .parrafoPrincipalServicios {
+        font-size: 1.6rem;
+    }
+
+    .cajaServicios {
+        height: 16rem;
+    }
+
+    .servicios {
+        display: grid;
+        height: auto;
+        gap: 0.5%;
+        align-items: center;
+        justify-content: center;
+        margin: 10% 3% 5% 3%;
+        grid-template-areas:
+            "textoPrincipal"
+            "servicio1"
+            "servicio2"
+            "servicio3"
+            "servicio4"
+            "servicio5"
+            "servicio6"
+            "servicio7"
+            "servicio8"
+            "servicio9"
+            "espacio"
+        ;
+    }
+
+    .servicio {
+        margin-left: 4px;
+    }
+
+    .titulosServicio {
+        font-size: 1.7rem;
+    }
+
+    .parrafosServicio {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (min-width: 456px) and (max-width: 576px) {
+    
+    /*primeraSeccion*/
+
+
+    .tituloPrincipal {
+        font-size: 2.8rem;
+    }
+
+    .textoPrincipal {
+        font-size: 1.8rem;
+    }
+
+    /*segundaSeccion*/
+
+
+    .tituloSecundario {
+        font-size: 1.3rem;
+    }
+
+    .parrafoSecundario {
+        font-size: 1.1rem;
+    }
+
+    .iconoSecundario {
+        width: 85%;
+    }
+
+    /*terceraSeccion*/
+
+    .segundoArticulo {
+        margin: 4% 4% 7% 4%;
+    }
+
+    .tituloEncabezado {
+        font-size: 2.4rem;
+    }
+
+    .parrafoEncabezado {
+        font-size: 1.2rem;
+    }
+
+    .serviciosIndex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contentTextoServicioIndex {
+        width: 100%;
+
+    }
+
+    .contentImagenServicioIndex {
+        width: 100%;
+    }
+
+
+    .textoServicioIndex {
+        margin: 4% 4%;
+    }
+
+    .titulosServicioIndex {
+        font-size: 1.7rem;
+    }
+
+    .parrafosServicioIndex {
+        font-size: 1.2rem;
+    }
+
+    .ordenartexto {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+    }
+
+    .ordenarimagen {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+
+    /*cuartaSeccion*/
+
+
+    .cuartaSeccion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .textoCuartaSeccion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tituloCuartaSeccion {
+        font-size: 1.4rem;
+    }
+
+    .parrafoCuartaSeccion {
+        font-size: 1rem;
+    }
+
+    .cuartaSeccion button.learn-more {
+        width: 10rem;
+        height: auto;
+    }
+
+    /*quintaSeccion*/
+
+    .iconosQuintaSeccion {
+        margin-top: 7%;
+    }
+
+    .overlayQuintaSeccion h2 {
+        font-size: 1.5rem;
+    }
+
+    .overlayQuintaSeccion img {
+        width: 18%;
+        opacity: 0.3;
+        margin-top: 1rem;
+    }
+
+    /*sextaSeccion*/
+
+    .contentSextaSeccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 8% 8%;
+    }
+
+    .planosSextaSeccion {
+        width: auto;
+    }
+
+    .planos {
+        width: 100%;
+    }
+
+    .tituloSextaSeccion {
+        font-size: 1.6rem;
+    }
+
+    .parrafoSextaSeccion {
+        font-size: 1.2rem;
+    }
+
+    /*footer*/
+
+    .contentFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iconoFooter {
+        width: 38%;
+    }
+
+    .parrafoFooter {
+        font-size: 1rem;
+    }
+
+    /*Pagina Servicios*/
+
+    .espaciadoServicios {
+        margin-top: 6rem;
+    }
+
+    .tituloPrincipalServicios {
+        font-size: 3rem;
+    }
+
+    .parrafoPrincipalServicios {
+        font-size: 1.6rem;
+    }
+
+    .cajaServicios {
+        height: 15rem;
+    }
+
+    .servicios {
+        display: grid;
+        height: auto;
+        gap: 0.5%;
+        align-items: center;
+        justify-content: center;
+        margin: 10% 3% 5% 3%;
+        grid-template-areas:
+            "textoPrincipal"
+            "servicio1"
+            "servicio2"
+            "servicio3"
+            "servicio4"
+            "servicio5"
+            "servicio6"
+            "servicio7"
+            "servicio8"
+            "servicio9"
+            "espacio"
+        ;
+    }
+
+    .servicio {
+        margin-left: 4px;
+    }
+
+    .titulosServicio {
+        font-size: 1.7rem;
+    }
+
+    .parrafosServicio {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+
+    /*segundaSeccion*/
+
+
+    .tituloSecundario {
+        font-size: 1.4rem;
+    }
+
+    .parrafoSecundario {
+        font-size: 1.1rem;
+    }
+
+    .iconoSecundario {
+        width: 90%;
+    }
+
+
+    /*terceraSeccion*/
+
+    .segundoArticulo {
+        margin: 4% 4% 7% 4%;
+    }
+
+    .parrafoEncabezado {
+        font-size: 1.2rem;
+    }
+
+    .serviciosIndex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contentTextoServicioIndex {
+        width: 100%;
+    }
+
+    .contentImagenServicioIndex {
+        width: 100%;
+
+    }
+
+    .textoServicioIndex {
+        margin: 4% 8%;
+    }
+
+    .parrafosServicioIndex {
+        font-size: 1.2rem;
+    }
+
+    .ordenartexto {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+    }
+
+    .ordenarimagen {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+
+    /*cuartaSeccion*/
+
+
+    .cuartaSeccion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .textoCuartaSeccion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tituloCuartaSeccion {
+        font-size: 1.7rem;
+    }
+
+    .parrafoCuartaSeccion {
+        font-size: 1.3rem;
+    }
+
+    /*quintaSeccion*/
+
+
+    .iconosQuintaSeccion {
+        margin-top: 7%;
+    }
+
+    .overlayQuintaSeccion h2 {
+        font-size: 1.5rem;
+    }
+
+    .overlayQuintaSeccion img {
+        width: 15%;
+        opacity: 0.3;
+        margin-top: 25px;
+    }
+
+    /*sextaSeccion*/
+
+    .tituloSextaSeccion {
+        font-size: 1.8rem;
+    }
+
+    .parrafoSextaSeccion {
+        font-size: 1.4rem;
+    }
+
+    .contentSextaSeccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 8% 8%;
+    }
+
+    .planosSextaSeccion {
+        width: auto;
+    }
+
+    .planos {
+        width: 100%;
+    }
+
+
+    /*footer*/
+
+    .contentFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iconoFooter {
+        width: 40%;
+    }
+
+
+    .parrafoFooter {
+        font-size: 1rem;
+    }
+
+    /*Pagina Servicios*/
+
+    .espaciadoServicios {
+        margin-top: 5rem;
+    }
+
+    .tituloPrincipalServicios {
+        font-size: 3.5rem;
+    }
+
+    .parrafoPrincipalServicios {
+        font-size: 2rem;
+    }
+
+    .cajaServicios {
+        height: 18rem;
+    }
+
+    .servicios {
+        display: grid;
+        height: auto;
+        gap: 0.5%;
+        align-items: center;
+        justify-content: center;
+        margin: 10% 3% 5% 3%;
+        grid-template-areas:
+            "textoPrincipal"
+            "servicio1"
+            "servicio2"
+            "servicio3"
+            "servicio4"
+            "servicio5"
+            "servicio6"
+            "servicio7"
+            "servicio8"
+            "servicio9"
+            "espacio"
+        ;
+    }
+
+    .servicio {
+        margin-left: 8px;
+    }
+
+
+    .titulosServicio {
+        font-size: 1.8rem;
+    }
+
+    .parrafosServicio {
+        font-size: 1.3rem;
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+
+    /*segundaSeccion*/
+
+    .tituloSecundario {
+        font-size: 1.8rem;
+    }
+
+    .parrafoSecundario {
+        font-size: 1.4rem;
+    }
+
+    .iconoSecundario {
+        width: 95%;
+    }
+
+    /*terceraSeccion*/
+
+
+    .segundoArticulo {
+        margin: 4% 4% 7% 4%;
+    }
+
+    .parrafoEncabezado {
+        font-size: 1.4rem;
+    }
+
+    .serviciosIndex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contentTextoServicioIndex {
+        width: 100%;
+    }
+
+    .contentImagenServicioIndex {
+        width: 100%;
+
+    }
+
+    .textoServicioIndex {
+        margin: 4% 8%;
+    }
+
+    .parrafosServicioIndex {
+        font-size: 1.3rem;
+    }
+
+    .ordenartexto {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+    }
+
+    .ordenarimagen {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+
+
+    /*cuartaSeccion*/
+
+
+    .cuartaSeccion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .textoCuartaSeccion {
+
+        margin: 0 15px 10px 15px;
+    }
+
+
+
+    /*quintaSeccion*/
+
+    .iconosQuintaSeccion {
+        margin-top: 6%;
+    }
+
+    .overlayQuintaSeccion img {
+        width: 14%;
+    }
+
+    /*sextaSeccion*/
+
+    .contentSextaSeccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 8% 14%;
+    }
+
+    .planosSextaSeccion {
+        width: auto;
+    }
+
+    .tituloSextaSeccion {
+        font-size: 2rem;
+    }
+
+    .parrafoSextaSeccion {
+        font-size: 1.5rem;
+    }
+
+    /*footer*/
+
+    .contentFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iconoFooter {
+        width: 50%;
+    }
+
+    .parrafoFooter {
+        font-size: 1.2rem;
+    }
+
+    /*Pagina Servicios*/
+
+    .espaciadoServicios {
+
+        margin-top: 5rem;
+    }
+
+    .tituloPrincipalServicios {
+        font-size: 4rem;
+    }
+
+
+    .parrafoPrincipalServicios {
+        font-size: 1.8rem;
+    }
+
+    .titulosServicio {
+        font-size: 2rem;
+    }
+
+    .parrafosServicio {
+        font-size: 1.5rem;
+    }
+
+
+    .servicios {
+        display: grid;
+        margin: 10% 3% 5% 3%;
+        gap: 0.5%;
+        height: auto;
+        grid-column: (2, 1fr);
+        grid-template-areas:
+            "textoPrincipal textoPrincipal"
+            "servicio1 servicio2"
+            "servicio3 servicio4"
+            "servicio5 servicio6"
+            "servicio7 servicio8"
+            "servicio9 servicio9"
+        ;
+    }
+
+    .servicio9 {
+        display: none;
+    }
+
+    .servicio {
+        margin-left: 13px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    /*segundaSeccion*/
+
+
+    /*terceraSeccion*/
+
+    .segundoArticulo {
+        margin: 4% 4%;
+    }
+
+    .parrafoEncabezado {
+        font-size: 1.5rem;
+    }
+
+    .textoServicioIndex {
+        margin: 8% 5%;
+    }
+
+    .titulosServicioIndex {
+        font-size: 2rem;
+    }
+
+    .parrafosServicioIndex {
+        font-size: 1.4rem;
+    }
+
+
+    /*cuartaSeccion*/
+    .textoCuartaSeccion {
+
+        margin: 0 15px 10px 15px;
+    }
+
+
+    /*quintaSeccion*/
+
+
+    .overlayQuintaSeccion img {
+        width: 14%;
+    }
+
+    /*sextaSeccion*/
+
+
+
+    .tituloSextaSeccion {
+        font-size: 1.6rem;
+    }
+
+    .parrafoSextaSeccion {
+        font-size: 1.2rem;
+    }
+
+    /*footer*/
+
+    .iconoFooter {
+        width: 45%;
+    }
+
+    .parrafoFooter {
+        font-size: 1.1rem;
+    }
+
+    /*Pagina Servicios*/
+
+    .espaciadoServicios {
+        margin-top: 5rem;
+    }
+
+    .tituloPrincipalServicios {
+        font-size: 5rem;
+    }
+
+
+    .parrafoPrincipalServicios {
+        font-size: 2rem;
+    }
+
+    .titulosServicio {
+        font-size: 2.2rem;
+    }
+
+    .parrafosServicio {
+        font-size: 1.8rem;
+    }
+   
+    .servicios {
+        display: grid;
+        margin: 10% 3% 5% 3%;
+        gap: 0.5%;
+        height: auto;
+        grid-column: (2, 1fr);
+        grid-template-areas:
+            "textoPrincipal textoPrincipal"
+            "servicio1 servicio2"
+            "servicio3 servicio4"
+            "servicio5 servicio6"
+            "servicio7 servicio8"
+            "servicio9 servicio9"
+        ;
+    }
+
+    .servicio9 {
+        display: none;
+    }
+
+    .servicio {
+        margin-left: 13px;
+    }
+}
